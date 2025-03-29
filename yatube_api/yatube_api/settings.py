@@ -12,10 +12,10 @@ SECRET_KEY = env(
     'SECRET_KEY',
     default="unsafe-secret-key-45t548fh48fh4gefgh4734753erhg#$@#$")
 
-DEBUG = env('DEBUG', default='True') == 'True'
-
 ALLOWED_HOSTS = env(
     'ALLOWED_HOSTS', default='localhost').split(', ')
+
+DEBUG = env('DEBUG', default='True') == 'True'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
