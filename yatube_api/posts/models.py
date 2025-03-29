@@ -3,6 +3,7 @@ from django.db import models
 
 User = get_user_model()
 
+
 class Group(models.Model):
     """Группы."""
 
@@ -70,7 +71,6 @@ class Comment(models.Model):
     class Meta:
         verbose_name_plural = 'Комментарии'
         verbose_name = 'Комментарий'
-
 
     def __str__(self):
         return self.text
